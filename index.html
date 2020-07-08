@@ -7,16 +7,22 @@
     <link rel="stylesheet" href="style.css">
     <title>Random Color Theme</title>
 </head>
-<body>
-    <header class="container" id="bodyHeader">
-        <h1>Random Color Theme Generator</h1>
+<body class="container">
+    <header class="row" id="bodyHeader">
+        <h1 class="col-sm-12 m-1" id="title">Random Color Theme Generator</h1>
     </header>
     <main class="container" id="mainContainer">
         <section class="card" id="card">
-            <header class="card-title mx-auto" id="cardTitle">Click On The Photo</header>
-            <img class="card-img" id="cardImage" src="http://placekitten.com/200/300" />
-            <section class="card-body" id="cardBody">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae esse minima ratione totam neque aspernatur adipisci, distinctio quos perspiciatis quidem reprehenderit porro laudantium eos, dolorum corporis asperiores, obcaecati rem. Quod?</section>
-        </section>
+            <header class="row card-title mx-auto" id="cardTitle"><h2>Click On The Photo</h2></header>
+            <section class="row d-flex justify-content-around">
+                <div class="col-sm-6">
+                    <img class="card-img" id="cardImage" src="http://placekitten.com/200/300" />
+                </div>
+                <div class="col-sm-6">
+                    <section class="card-body" id="cardBody">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae esse minima ratione totam neque aspernatur adipisci, distinctio quos perspiciatis quidem reprehenderit porro laudantium eos, dolorum corporis asperiores, obcaecati rem. Quod?</section>
+                </div>
+            </section>
+            </section>
 
     </main>
 

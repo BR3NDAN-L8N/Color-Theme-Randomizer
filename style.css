@@ -1,6 +1,9 @@
+* {
+    border-radius: 5px;
+}
+
 .card-img {
     height: 200px;
     width: 300px;
-    align-self: center;
     cursor: pointer;
 }
