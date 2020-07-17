@@ -55,5 +55,5 @@ function randomizeRGB(colorVariable) {
     console.log(`Primary Font Color: ${textPrimary}`)
     console.log(`==============================================`)
 
-}
+
 
