@@ -1,12 +1,12 @@
-let buttonImage = document.getElementById('cardImage').addEventListener('click', imagePressed);
-let body = document.querySelector('body');
-let bodyHeader = document.querySelector('#bodyHeader');
-let title = document.getElementById('title');
-let mainContainer = document.querySelector('#mainContainer');
-let card = document.querySelector('#card');
-let cardTitle = document.querySelector('#cardTitle');
+const body = document.querySelector('body');
+const bodyHeader = document.querySelector('#bodyHeader');
+const title = document.getElementById('title');
+const mainContainer = document.querySelector('#mainContainer');
+const card = document.querySelector('#card');
+const cardTitle = document.querySelector('#cardTitle');
 
-function imagePressed() {
+
+let buttonImage = document.getElementById('cardImage').addEventListener('click', function () {
     // Placeholder Variable For Use in randomizeRGB()
     let tempColorVar = "";
     // Assigning Random Colors To BACKGROUND Color Variables
@@ -30,7 +30,15 @@ function imagePressed() {
     // FONT tertiary
     title.style.color = textTitle;
     cardTitle.style.color = textTitle;
-}
+
+    // logging values for each color
+    console.log(`Primary Background Color: ${backgroundPrimary}`)
+    console.log(`Tertiary 1 Background Color: ${backgroundTertiary1}`)
+    console.log(`Tertiary 2 Background Color: ${backgroundTertiary2}`)
+    console.log(`Primary Font Color: ${textTitle}`)
+    console.log(`Primary Font Color: ${textPrimary}`)
+    console.log(`==============================================`)
+})
 
 function randomizeRGB(colorVariable) {
     // initial color variables
@@ -47,13 +55,7 @@ function randomizeRGB(colorVariable) {
     return colorVariable;
 }
     
-    // logging values for each color
-    console.log(`Primary Background Color: ${backgroundPrimary}`)
-    console.log(`Tertiary 1 Background Color: ${backgroundTertiary1}`)
-    console.log(`Tertiary 2 Background Color: ${backgroundTertiary2}`)
-    console.log(`Primary Font Color: ${textTitle}`)
-    console.log(`Primary Font Color: ${textPrimary}`)
-    console.log(`==============================================`)
+    
 
 
 
